@@ -1,0 +1,3 @@
+FROM scratch
+COPY node-agent /node-agent
+ENTRYPOINT ["/node-agent"]

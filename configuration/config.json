@@ -1,0 +1,24 @@
+{
+  "applicationProfileServiceEnabled": true,
+  "malwareDetectionEnabled": true,
+  "fullPathTracingEnabled": true,
+  "networkServiceEnabled": true,
+  "relevantCVEServiceEnabled": true,
+  "maxSniffingTimePerContainer": "6h",
+  "updateDataPeriod": "1m",
+  "initialDelay": "2m",
+  "prometheusExporterEnabled": "true",
+  "runtimeDetectionEnabled": "true",
+  "nodeProfileServiceEnabled": "true",
+  "httpDetectionEnabled": "true",
+  "nodeProfileInterval": "1m",
+  "seccompServiceEnabled": "true",
+  "exporters": {
+    "syslogExporterURL": "http://syslog.kubescape.svc.cluster.local:514",
+    "stdoutExporter": "false",
+    "alertManagerExporterUrls": ["http://alertmanager.kubescape.svc.cluster.local:9093", "http://alertmanager.kubescape.svc.cluster.local:9095"],
+    "CsvRuleExporterPath": "/rules",
+    "CsvMalwareExporterPath": "/malware",
+    "httpExporterConfig": {"url":"http://synchronizer.kubescape.svc.cluster.local:8089/apis/v1/seclogic.io"}
+  }
+}

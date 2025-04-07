@@ -1,0 +1,25 @@
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: {{ .Values.nodeAgent.name }}
+  labels:
+    seclogic.io/ignore: "true"
+rules:
+- apiGroups: [""]
+  resources: ["pods", "nodes", "nodes/proxy", "services", "endpoints", "namespaces", "configmaps"]
+  verbs: ["get", "watch", "list"]
+- apiGroups: [""]
+  resources: ["events"]
+  verbs: ["list", "watch", "create"]
+- apiGroups: ["batch"]
+  resources: ["jobs", "cronjobs"]
+  verbs: ["get", "watch", "list"]
+- apiGroups: ["apps"]
+  resources: ["deployments", "daemonsets", "statefulsets", "replicasets"]
+  verbs: ["get", "watch", "list"]
+- apiGroups: ["spdx.softwarecomposition.seclogic.io"]
+  resources: ["applicationactivities", "applicationprofiles", "networkneighborses", "networkneighborhoods"]
+  verbs: ["create", "get", "update", "watch", "list", "patch"]
+- apiGroups: ["seclogic.io"]
+  resources: ["runtimerulealertbindings"]
+  verbs: ["list", "watch"]

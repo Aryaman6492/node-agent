@@ -1,0 +1,33 @@
+{
+    "apiVersion": "spdx.softwarecomposition.seclogic.io/v1beta1",
+    "kind": "NetworkNeighborhood",
+    "metadata": {
+        "annotations": {
+            "seclogic.io/resource-size": "85",
+            "seclogic.io/completion": "complete",
+            "seclogic.io/status": "completed"
+        },
+        "creationTimestamp": "2024-03-19T09:27:05Z",
+        "labels": {
+            "seclogic.io/instance-template-hash": "77b4fdf86c",
+            "seclogic.io/workload-api-group": "apps",
+            "seclogic.io/workload-api-version": "v1",
+            "seclogic.io/workload-kind": "Deployment",
+            "seclogic.io/workload-name": "nginx"
+        },
+        "name": "replicaset-nginx-77b4fdf86c"
+    },
+    "spec": {
+        "matchLabels": {
+            "app": "nginx"
+        },
+        "containers": [
+            {
+                "egress": null,
+                "ingress": null,
+                "name": "nginx"
+            }
+        ]
+    },
+    "status": {}
+}

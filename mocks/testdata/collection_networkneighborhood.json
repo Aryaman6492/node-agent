@@ -1,0 +1,55 @@
+{
+    "apiVersion": "spdx.softwarecomposition.seclogic.io/v1beta1",
+    "kind": "NetworkNeighborhood",
+    "metadata": {
+        "annotations": {
+            "seclogic.io/resource-size": "24",
+            "seclogic.io/completion": "complete",
+            "seclogic.io/status": "completed"
+        },
+        "labels": {
+            "seclogic.io/instance-template-hash": "94c495554",
+            "seclogic.io/workload-api-group": "apps",
+            "seclogic.io/workload-api-version": "v1",
+            "seclogic.io/workload-init-container-name": "busybox",
+            "seclogic.io/workload-kind": "Deployment",
+            "seclogic.io/workload-name": "collection"
+        },
+        "name": "replicaset-collection-94c495554"
+    },
+    "spec": {
+        "matchLabels": {
+            "app": "collection"
+        },
+        "containers": [
+            {
+                "egress": null,
+                "ingress": null,
+                "name": "alpine-container"
+            },
+            {
+                "egress": null,
+                "ingress": null,
+                "name": "redis"
+            },
+            {
+                "egress": null,
+                "ingress": null,
+                "name": "wordpress"
+            }
+        ],
+        "initContainers": [
+            {
+                "egress": null,
+                "ingress": null,
+                "name": "busybox"
+            },
+            {
+                "egress": null,
+                "ingress": null,
+                "name": "alpine"
+            }
+        ]
+    },
+    "status": {}
+}

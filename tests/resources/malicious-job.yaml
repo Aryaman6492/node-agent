@@ -1,0 +1,34 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: malicious-app-job
+  labels:
+    app: malicious-app
+spec:
+  template:
+    metadata:
+      labels:
+        app: malicious-app
+    spec:
+      hostIPC: true  # This enables IPC host mode (equivalent to --ipc="host")
+      containers:
+      - name: malicious-app
+        # sourcecode: node-agent/tests/images/malicious-app
+        image: quay.io/kubescape/node-agent:maliciousapp5
+        imagePullPolicy: Always
+        env:
+          - name: WAIT_FOR_SIGTERM
+            value: "true"
+          - name: WAIT_BEFORE_START
+            value: "3m"
+        securityContext:
+          capabilities:
+            add: ["IPC_OWNER"]
+        volumeMounts:
+          - mountPath: /podmount
+            name: mount-for-alert
+      restartPolicy: Never
+      volumes:
+      - name: mount-for-alert
+        emptyDir: {}
+  backoffLimit: 1
