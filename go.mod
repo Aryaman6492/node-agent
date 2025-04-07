@@ -3,6 +3,7 @@ module github.com/Aryaman6492/node-agent
 go 1.23.2
 
 require (
+	github.com/Aryaman6492/storage v0.0.158
 	github.com/DmitriyVTitov/size v1.5.0
 	github.com/anchore/syft v1.18.1
 	github.com/aquilax/truncate v1.0.0
@@ -10,7 +11,7 @@ require (
 	github.com/armosec/utils-k8s-go v0.0.30
 	github.com/cenkalti/backoff v2.2.1+incompatible
 	github.com/cenkalti/backoff/v4 v4.3.0
-	github.com/cenkalti/backoff/v5 v5.0.1
+	github.com/cenkalti/backoff/v5 v5.0.2
 	github.com/cilium/ebpf v0.17.3
 	github.com/crewjam/rfc5424 v0.1.0
 	github.com/cyphar/filepath-securejoin v0.4.1
@@ -33,7 +34,6 @@ require (
 	github.com/kubescape/backend v0.0.25
 	github.com/kubescape/go-logger v0.0.23
 	github.com/kubescape/k8s-interface v0.0.189
-	github.com/Aryaman6492/storage v0.0.158
 	github.com/moby/sys/mountinfo v0.7.2
 	github.com/opencontainers/go-digest v1.0.0
 	github.com/opencontainers/image-spec v1.1.0
@@ -63,6 +63,8 @@ require (
 	k8s.io/utils v0.0.0-20241210054802-24370beab758
 	sigs.k8s.io/yaml v1.4.0
 )
+
+replace github.com/Aryaman6492/storage => /home/ripeey/Desktop/cqs-sensor/copycon/storage
 
 require (
 	dario.cat/mergo v1.0.1 // indirect
