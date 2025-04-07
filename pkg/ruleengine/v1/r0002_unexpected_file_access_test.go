@@ -5,11 +5,11 @@ import (
 
 	corev1 "k8s.io/api/core/v1"
 
-	"github.com/kubescape/node-agent/pkg/ebpf/events"
-	"github.com/kubescape/node-agent/pkg/objectcache"
-	"github.com/kubescape/node-agent/pkg/utils"
+	"github.com/Aryaman6492/node-agent/pkg/ebpf/events"
+	"github.com/Aryaman6492/node-agent/pkg/objectcache"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
 
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
 
 	traceropentype "github.com/inspektor-gadget/inspektor-gadget/pkg/gadgets/trace/open/types"
 	eventtypes "github.com/inspektor-gadget/inspektor-gadget/pkg/types"

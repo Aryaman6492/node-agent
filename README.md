@@ -1,8 +1,8 @@
 # NodeAgent
-[![Version](https://img.shields.io/github/v/release/kubescape/node-agent)](https://github.com/kubescape/node-agent/releases)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/kubescape/node-agent/badge)](https://securityscorecards.dev/viewer/?uri=github.com/kubescape/node-agent)
+[![Version](https://img.shields.io/github/v/release/kubescape/node-agent)](https://github.com/Aryaman6492/node-agent/releases)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/Aryaman6492/node-agent/badge)](https://securityscorecards.dev/viewer/?uri=github.com/Aryaman6492/node-agent)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkubescape%2Fsniffer.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkubescape%2Fsniffer?ref=badge_shield&issueType=license)
-[![Stars](https://img.shields.io/github/stars/kubescape/node-agent?style=social)](https://github.com/kubescape/node-agent/stargazers)
+[![Stars](https://img.shields.io/github/stars/kubescape/node-agent?style=social)](https://github.com/Aryaman6492/node-agent/stargazers)
 
 NodeAgent is a component of Kubescape that enables node-level security scanning and monitoring.
 It uses eBPF technology to monitor the system and provides real-time security insights.
@@ -55,4 +55,4 @@ sudo ./node-agent
 ```
 ## Changelog
 
-Kubescape Node-agent changes are tracked on the [release](https://github.com/kubescape/node-agent/releases) page
+Kubescape Node-agent changes are tracked on the [release](https://github.com/Aryaman6492/node-agent/releases) page

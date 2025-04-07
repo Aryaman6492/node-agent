@@ -4,7 +4,7 @@ import (
 	"strings"
 
 	"github.com/dghubble/trie"
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
 )
 
 // BidirectionalNode extends the call stack node with parent reference

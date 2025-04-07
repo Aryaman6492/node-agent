@@ -3,13 +3,13 @@ package ruleengine
 import (
 	"fmt"
 
-	"github.com/kubescape/node-agent/pkg/objectcache"
-	"github.com/kubescape/node-agent/pkg/ruleengine"
-	"github.com/kubescape/node-agent/pkg/utils"
+	"github.com/Aryaman6492/node-agent/pkg/objectcache"
+	"github.com/Aryaman6492/node-agent/pkg/ruleengine"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
 
 	apitypes "github.com/armosec/armoapi-go/armotypes"
 
-	tracerptracetype "github.com/kubescape/node-agent/pkg/ebpf/gadgets/ptrace/tracer/types"
+	tracerptracetype "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/ptrace/tracer/types"
 )
 
 const (

@@ -3,7 +3,7 @@ package objectcache
 import (
 	"time"
 
-	"github.com/kubescape/node-agent/pkg/utils"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
 	corev1 "k8s.io/api/core/v1"

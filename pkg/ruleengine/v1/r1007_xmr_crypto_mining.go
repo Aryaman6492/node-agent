@@ -3,11 +3,11 @@ package ruleengine
 import (
 	"fmt"
 
-	"github.com/kubescape/node-agent/pkg/objectcache"
-	"github.com/kubescape/node-agent/pkg/ruleengine"
-	"github.com/kubescape/node-agent/pkg/utils"
+	"github.com/Aryaman6492/node-agent/pkg/objectcache"
+	"github.com/Aryaman6492/node-agent/pkg/ruleengine"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
 
-	tracerrandomxtype "github.com/kubescape/node-agent/pkg/ebpf/gadgets/randomx/types"
+	tracerrandomxtype "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/randomx/types"
 
 	apitypes "github.com/armosec/armoapi-go/armotypes"
 )

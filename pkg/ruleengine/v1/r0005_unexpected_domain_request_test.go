@@ -3,11 +3,11 @@ package ruleengine
 import (
 	"testing"
 
-	"github.com/kubescape/node-agent/pkg/utils"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
 
 	tracerdnstype "github.com/inspektor-gadget/inspektor-gadget/pkg/gadgets/trace/dns/types"
 	eventtypes "github.com/inspektor-gadget/inspektor-gadget/pkg/types"
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
 )
 
 func TestR0005UnexpectedDomainRequest(t *testing.T) {

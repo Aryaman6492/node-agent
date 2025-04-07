@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/kubescape/node-agent/pkg/utils"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
 
-	ruleenginetypes "github.com/kubescape/node-agent/pkg/ruleengine/types"
+	ruleenginetypes "github.com/Aryaman6492/node-agent/pkg/ruleengine/types"
 
 	eventtypes "github.com/inspektor-gadget/inspektor-gadget/pkg/types"
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
 )
 
 func TestR0003UnexpectedSystemCall(t *testing.T) {

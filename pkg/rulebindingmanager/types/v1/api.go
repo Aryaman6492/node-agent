@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/kubescape/node-agent/pkg/rulebindingmanager/types"
+	"github.com/Aryaman6492/node-agent/pkg/rulebindingmanager/types"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 )
 

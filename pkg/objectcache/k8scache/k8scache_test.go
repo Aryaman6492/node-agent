@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	"github.com/kubescape/k8s-interface/k8sinterface"
-	"github.com/kubescape/node-agent/mocks"
-	"github.com/kubescape/node-agent/pkg/watcher"
+	"github.com/Aryaman6492/node-agent/mocks"
+	"github.com/Aryaman6492/node-agent/pkg/watcher"
 	"github.com/stretchr/testify/assert"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

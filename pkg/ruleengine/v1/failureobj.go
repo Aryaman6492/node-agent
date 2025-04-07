@@ -1,7 +1,7 @@
 package ruleengine
 
 import (
-	"github.com/kubescape/node-agent/pkg/ruleengine"
+	"github.com/Aryaman6492/node-agent/pkg/ruleengine"
 
 	apitypes "github.com/armosec/armoapi-go/armotypes"
 	"github.com/armosec/utils-k8s-go/wlid"

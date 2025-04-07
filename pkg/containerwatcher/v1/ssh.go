@@ -3,8 +3,8 @@ package containerwatcher
 import (
 	"fmt"
 
-	tracerssh "github.com/kubescape/node-agent/pkg/ebpf/gadgets/ssh/tracer"
-	tracersshtype "github.com/kubescape/node-agent/pkg/ebpf/gadgets/ssh/types"
+	tracerssh "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/ssh/tracer"
+	tracersshtype "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/ssh/types"
 
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/container-collection/networktracer"
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/types"

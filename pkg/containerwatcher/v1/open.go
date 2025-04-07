@@ -6,8 +6,8 @@ import (
 	traceropen "github.com/inspektor-gadget/inspektor-gadget/pkg/gadgets/trace/open/tracer"
 	traceropentype "github.com/inspektor-gadget/inspektor-gadget/pkg/gadgets/trace/open/types"
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/types"
-	events "github.com/kubescape/node-agent/pkg/ebpf/events"
-	"github.com/kubescape/node-agent/pkg/utils"
+	events "github.com/Aryaman6492/node-agent/pkg/ebpf/events"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
 )
 
 func (ch *IGContainerWatcher) openEventCallback(event *traceropentype.Event) {

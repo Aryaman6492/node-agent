@@ -4,7 +4,7 @@ import (
 	mapset "github.com/deckarep/golang-set/v2"
 	"github.com/goradd/maps"
 	"github.com/kubescape/k8s-interface/k8sinterface"
-	"github.com/kubescape/node-agent/pkg/ruleengine"
+	"github.com/Aryaman6492/node-agent/pkg/ruleengine"
 )
 
 func NewCacheMock(nodeName string) *RBCache {

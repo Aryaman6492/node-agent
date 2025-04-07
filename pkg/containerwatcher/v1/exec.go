@@ -6,8 +6,8 @@ import (
 	tracerexec "github.com/inspektor-gadget/inspektor-gadget/pkg/gadgets/trace/exec/tracer"
 	tracerexectype "github.com/inspektor-gadget/inspektor-gadget/pkg/gadgets/trace/exec/types"
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/types"
-	events "github.com/kubescape/node-agent/pkg/ebpf/events"
-	"github.com/kubescape/node-agent/pkg/utils"
+	events "github.com/Aryaman6492/node-agent/pkg/ebpf/events"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
 )
 
 func (ch *IGContainerWatcher) execEventCallback(event *tracerexectype.Event) {

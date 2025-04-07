@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	eventtypes "github.com/inspektor-gadget/inspektor-gadget/pkg/types"
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/consts"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/consts"
 )
 
 const MaxGroupedEventSize int = 10000

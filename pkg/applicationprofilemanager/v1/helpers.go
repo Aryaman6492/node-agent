@@ -14,11 +14,11 @@ import (
 
 	"github.com/kubescape/go-logger"
 	"github.com/kubescape/go-logger/helpers"
-	tracerhttphelper "github.com/kubescape/node-agent/pkg/ebpf/gadgets/http/tracer"
-	tracerhttptype "github.com/kubescape/node-agent/pkg/ebpf/gadgets/http/types"
-	"github.com/kubescape/node-agent/pkg/rulebindingmanager"
-	"github.com/kubescape/node-agent/pkg/utils"
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
+	tracerhttphelper "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/http/tracer"
+	tracerhttptype "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/http/types"
+	"github.com/Aryaman6492/node-agent/pkg/rulebindingmanager"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
 )
 
 func GetNewEndpoint(event *tracerhttptype.Event, identifier string) (*v1beta1.HTTPEndpoint, error) {

@@ -7,11 +7,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/kubescape/node-agent/pkg/cooldownqueue"
-	"github.com/kubescape/node-agent/pkg/k8sclient"
-	"github.com/kubescape/node-agent/pkg/watcher"
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition"
-	spdxv1beta1 "github.com/kubescape/storage/pkg/generated/clientset/versioned/typed/softwarecomposition/v1beta1"
+	"github.com/Aryaman6492/node-agent/pkg/cooldownqueue"
+	"github.com/Aryaman6492/node-agent/pkg/k8sclient"
+	"github.com/Aryaman6492/node-agent/pkg/watcher"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition"
+	spdxv1beta1 "github.com/Aryaman6492/storage/pkg/generated/clientset/versioned/typed/softwarecomposition/v1beta1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/tools/pager"
 

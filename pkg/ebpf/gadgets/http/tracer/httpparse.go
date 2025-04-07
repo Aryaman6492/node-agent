@@ -13,7 +13,7 @@ import (
 
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/gadgets"
 	eventtypes "github.com/inspektor-gadget/inspektor-gadget/pkg/types"
-	tracerhttptype "github.com/kubescape/node-agent/pkg/ebpf/gadgets/http/types"
+	tracerhttptype "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/http/types"
 )
 
 func CreateEventFromRequest(bpfEvent *http_snifferHttpevent) (*tracerhttptype.Event, error) {

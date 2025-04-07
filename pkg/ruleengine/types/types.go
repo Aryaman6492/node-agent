@@ -2,7 +2,7 @@ package types
 
 import (
 	eventtypes "github.com/inspektor-gadget/inspektor-gadget/pkg/types"
-	"github.com/kubescape/node-agent/pkg/ruleengine"
+	"github.com/Aryaman6492/node-agent/pkg/ruleengine"
 )
 
 type SyscallEvent struct {

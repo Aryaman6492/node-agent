@@ -3,7 +3,7 @@ package exporters
 import (
 	"testing"
 
-	"github.com/kubescape/node-agent/pkg/ruleengine/v1"
+	"github.com/Aryaman6492/node-agent/pkg/ruleengine/v1"
 )
 
 func TestPriorityToStatus(t *testing.T) {

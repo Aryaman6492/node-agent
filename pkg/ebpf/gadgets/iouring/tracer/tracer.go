@@ -11,8 +11,8 @@ import (
 	"github.com/cilium/ebpf/perf"
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/gadgets"
 	eventtypes "github.com/inspektor-gadget/inspektor-gadget/pkg/types"
-	"github.com/kubescape/node-agent/pkg/ebpf/gadgets/iouring/tracer/types"
-	kernel "github.com/kubescape/node-agent/pkg/validator/ebpf"
+	"github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/iouring/tracer/types"
+	kernel "github.com/Aryaman6492/node-agent/pkg/validator/ebpf"
 	"github.com/shirou/gopsutil/v4/host"
 )
 

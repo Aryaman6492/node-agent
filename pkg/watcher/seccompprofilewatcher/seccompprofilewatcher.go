@@ -3,10 +3,10 @@ package seccompprofilewatcher
 import (
 	"context"
 
-	"github.com/kubescape/node-agent/pkg/seccompmanager"
-	"github.com/kubescape/node-agent/pkg/watcher"
-	v1beta1api "github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
-	"github.com/kubescape/storage/pkg/generated/clientset/versioned/typed/softwarecomposition/v1beta1"
+	"github.com/Aryaman6492/node-agent/pkg/seccompmanager"
+	"github.com/Aryaman6492/node-agent/pkg/watcher"
+	v1beta1api "github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
+	"github.com/Aryaman6492/storage/pkg/generated/clientset/versioned/typed/softwarecomposition/v1beta1"
 	"k8s.io/apimachinery/pkg/runtime"
 
 	"github.com/kubescape/go-logger"

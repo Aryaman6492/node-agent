@@ -1,8 +1,8 @@
 package ruleengine
 
 import (
-	"github.com/kubescape/node-agent/pkg/objectcache"
-	"github.com/kubescape/node-agent/pkg/utils"
+	"github.com/Aryaman6492/node-agent/pkg/objectcache"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
 
 	apitypes "github.com/armosec/armoapi-go/armotypes"
 	igtypes "github.com/inspektor-gadget/inspektor-gadget/pkg/types"

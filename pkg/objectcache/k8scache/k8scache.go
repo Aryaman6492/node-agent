@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/kubescape/node-agent/pkg/k8sclient"
-	"github.com/kubescape/node-agent/pkg/objectcache"
-	"github.com/kubescape/node-agent/pkg/utils"
-	"github.com/kubescape/node-agent/pkg/watcher"
+	"github.com/Aryaman6492/node-agent/pkg/k8sclient"
+	"github.com/Aryaman6492/node-agent/pkg/objectcache"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
+	"github.com/Aryaman6492/node-agent/pkg/watcher"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"

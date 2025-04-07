@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	eventtypes "github.com/inspektor-gadget/inspektor-gadget/pkg/types"
-	traceriouringtype "github.com/kubescape/node-agent/pkg/ebpf/gadgets/iouring/tracer/types"
-	"github.com/kubescape/node-agent/pkg/utils"
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
+	traceriouringtype "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/iouring/tracer/types"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
 )
 
 func TestR1030UnexpectedIouringOperation(t *testing.T) {

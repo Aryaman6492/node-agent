@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kubescape/node-agent/pkg/watcher"
+	"github.com/Aryaman6492/node-agent/pkg/watcher"
 	"github.com/stretchr/testify/assert"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/watch"

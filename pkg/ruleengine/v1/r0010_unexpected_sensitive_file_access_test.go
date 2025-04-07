@@ -5,10 +5,10 @@ import (
 
 	traceropentype "github.com/inspektor-gadget/inspektor-gadget/pkg/gadgets/trace/open/types"
 	eventtypes "github.com/inspektor-gadget/inspektor-gadget/pkg/types"
-	events "github.com/kubescape/node-agent/pkg/ebpf/events"
-	"github.com/kubescape/node-agent/pkg/utils"
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
-	"github.com/kubescape/storage/pkg/registry/file/dynamicpathdetector"
+	events "github.com/Aryaman6492/node-agent/pkg/ebpf/events"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
+	"github.com/Aryaman6492/storage/pkg/registry/file/dynamicpathdetector"
 )
 
 func createTestEvent(path string, flags []string) *events.OpenEvent {

@@ -3,9 +3,9 @@ package containerwatcher
 import (
 	"fmt"
 
-	tracersymlink "github.com/kubescape/node-agent/pkg/ebpf/gadgets/symlink/tracer"
-	tracersymlinktype "github.com/kubescape/node-agent/pkg/ebpf/gadgets/symlink/types"
-	"github.com/kubescape/node-agent/pkg/utils"
+	tracersymlink "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/symlink/tracer"
+	tracersymlinktype "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/symlink/types"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
 
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/types"
 	"github.com/kubescape/go-logger"

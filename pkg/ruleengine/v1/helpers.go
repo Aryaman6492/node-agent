@@ -7,14 +7,14 @@ import (
 	"slices"
 	"strings"
 
-	events "github.com/kubescape/node-agent/pkg/ebpf/events"
+	events "github.com/Aryaman6492/node-agent/pkg/ebpf/events"
 
 	"github.com/kubescape/go-logger"
 	"github.com/kubescape/go-logger/helpers"
-	"github.com/kubescape/node-agent/pkg/objectcache"
+	"github.com/Aryaman6492/node-agent/pkg/objectcache"
 
 	eventtypes "github.com/inspektor-gadget/inspektor-gadget/pkg/types"
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
 )
 
 // SensitiveFiles is a list of sensitive files that should not be accessed by the application unexpectedly.

@@ -3,13 +3,13 @@ package networkmanager
 import (
 	"testing"
 
-	"github.com/kubescape/node-agent/pkg/networkmanager/testdata"
+	"github.com/Aryaman6492/node-agent/pkg/networkmanager/testdata"
 
 	_ "embed"
 
 	helpersv1 "github.com/kubescape/k8s-interface/instanceidhandler/v1/helpers"
 	"github.com/kubescape/k8s-interface/workloadinterface"
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
 	"github.com/stretchr/testify/assert"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	tracerexectype "github.com/inspektor-gadget/inspektor-gadget/pkg/gadgets/trace/exec/types"
-	events "github.com/kubescape/node-agent/pkg/ebpf/events"
+	events "github.com/Aryaman6492/node-agent/pkg/ebpf/events"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -1,7 +1,7 @@
 package rulebindingmanager
 
 import (
-	"github.com/kubescape/node-agent/pkg/ruleengine"
+	"github.com/Aryaman6492/node-agent/pkg/ruleengine"
 )
 
 type RuleBindingCache interface {

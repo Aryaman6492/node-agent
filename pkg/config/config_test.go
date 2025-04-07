@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kubescape/node-agent/pkg/exporters"
+	"github.com/Aryaman6492/node-agent/pkg/exporters"
 	"github.com/stretchr/testify/assert"
 )
 

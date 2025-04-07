@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/kubescape/node-agent/pkg/containerwatcher/v1"
+	"github.com/Aryaman6492/node-agent/pkg/containerwatcher/v1"
 
 	"github.com/kubescape/go-logger"
 	"github.com/kubescape/go-logger/helpers"

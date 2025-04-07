@@ -4,8 +4,8 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/kubescape/node-agent/pkg/objectcache"
-	"github.com/kubescape/node-agent/pkg/rulebindingmanager"
+	"github.com/Aryaman6492/node-agent/pkg/objectcache"
+	"github.com/Aryaman6492/node-agent/pkg/rulebindingmanager"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 

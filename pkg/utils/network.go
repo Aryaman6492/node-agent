@@ -4,7 +4,7 @@ import (
 	"crypto/sha256"
 	"fmt"
 
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
 )
 
 func CreateNetworkPatchOperations(ingress, egress []v1beta1.NetworkNeighbor, containerType string, containerIndex int) []PatchOperation {

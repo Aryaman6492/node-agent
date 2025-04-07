@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	mmtypes "github.com/kubescape/node-agent/pkg/malwaremanager/v1/types"
-	ruleenginev1 "github.com/kubescape/node-agent/pkg/ruleengine/v1"
+	mmtypes "github.com/Aryaman6492/node-agent/pkg/malwaremanager/v1/types"
+	ruleenginev1 "github.com/Aryaman6492/node-agent/pkg/ruleengine/v1"
 
 	"gopkg.in/mcuadros/go-syslog.v2"
 

@@ -1,7 +1,7 @@
 package exporters
 
 import (
-	"github.com/kubescape/node-agent/pkg/ruleengine/v1"
+	"github.com/Aryaman6492/node-agent/pkg/ruleengine/v1"
 )
 
 func PriorityToStatus(priority int) string {

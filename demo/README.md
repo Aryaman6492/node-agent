@@ -26,7 +26,7 @@ To install Node Agent, you need to have a Kubernetes cluster up and running. In 
 After you have a Kubernetes cluster up and running, you can install Node Agent by running the following commands:
 
 ```bash
-git clone https://github.com/kubescape/node-agent.git && cd node-agent
+git clone https://github.com/Aryaman6492/node-agent.git && cd node-agent
 # Assuming AlertManager is running in service  "alertmanager-operated" in namespace "monitoring"
 helm repo add kubescape https://kubescape.github.io/helm-charts/ ; helm repo update ; helm upgrade --install kubescape kubescape/kubescape-operator -n kubescape --create-namespace --set clusterName=`kubectl config current-context` --set nodeAgent.config.alertManagerExporterUrls=alertmanager-operated.monitoring.svc.cluster.local:9093 --set nodeAgent.config.maxLearningPeriod=15m --set nodeAgent.config.learningPeriod=2m --set nodeAgent.config.updatePeriod=1m --set capabilities.runtimeDetection=enable --set alertCRD.installDefault=true --set alertCRD.scopeClustered=true
 ```

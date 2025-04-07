@@ -8,11 +8,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/kubescape/node-agent/pkg/config"
-	"github.com/kubescape/node-agent/pkg/nodeprofilemanager"
-	"github.com/kubescape/node-agent/pkg/objectcache"
-	"github.com/kubescape/node-agent/pkg/rulemanager"
-	"github.com/kubescape/node-agent/pkg/utils"
+	"github.com/Aryaman6492/node-agent/pkg/config"
+	"github.com/Aryaman6492/node-agent/pkg/nodeprofilemanager"
+	"github.com/Aryaman6492/node-agent/pkg/objectcache"
+	"github.com/Aryaman6492/node-agent/pkg/rulemanager"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
 
 	"github.com/armosec/armoapi-go/armotypes"
 	"github.com/armosec/utils-k8s-go/armometadata"

@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kubescape/node-agent/mocks"
-	"github.com/kubescape/node-agent/pkg/watcher"
+	"github.com/Aryaman6492/node-agent/mocks"
+	"github.com/Aryaman6492/node-agent/pkg/watcher"
 
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
-	storagefake "github.com/kubescape/storage/pkg/generated/clientset/versioned/fake"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
+	storagefake "github.com/Aryaman6492/storage/pkg/generated/clientset/versioned/fake"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 

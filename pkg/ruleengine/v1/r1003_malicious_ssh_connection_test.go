@@ -3,9 +3,9 @@ package ruleengine
 import (
 	"testing"
 
-	tracersshtype "github.com/kubescape/node-agent/pkg/ebpf/gadgets/ssh/types"
-	"github.com/kubescape/node-agent/pkg/utils"
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
+	tracersshtype "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/ssh/types"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
 	"k8s.io/utils/ptr"
 
 	eventtypes "github.com/inspektor-gadget/inspektor-gadget/pkg/types"

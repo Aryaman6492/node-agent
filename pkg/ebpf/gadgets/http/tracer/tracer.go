@@ -16,8 +16,8 @@ import (
 	eventtypes "github.com/inspektor-gadget/inspektor-gadget/pkg/types"
 	"github.com/kubescape/go-logger"
 	"github.com/kubescape/go-logger/helpers"
-	"github.com/kubescape/node-agent/pkg/ebpf/gadgets/http/types"
-	tracepointlib "github.com/kubescape/node-agent/pkg/ebpf/lib"
+	"github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/http/types"
+	tracepointlib "github.com/Aryaman6492/node-agent/pkg/ebpf/lib"
 )
 
 //go:generate go run github.com/cilium/ebpf/cmd/bpf2go  -strip /usr/bin/llvm-strip-18  -cc /usr/bin/clang -no-global-types -target bpfel -cc clang -cflags "-g -O2 -Wall" -type active_connection_info -type packet_buffer -type httpevent http_sniffer bpf/http-sniffer.c -- -I./bpf/

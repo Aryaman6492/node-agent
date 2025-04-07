@@ -12,9 +12,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kubescape/node-agent/pkg/malwaremanager"
-	"github.com/kubescape/node-agent/pkg/ruleengine"
-	ruleenginev1 "github.com/kubescape/node-agent/pkg/ruleengine/v1"
+	"github.com/Aryaman6492/node-agent/pkg/malwaremanager"
+	"github.com/Aryaman6492/node-agent/pkg/ruleengine"
+	ruleenginev1 "github.com/Aryaman6492/node-agent/pkg/ruleengine/v1"
 
 	"github.com/kubescape/go-logger"
 	"github.com/kubescape/go-logger/helpers"

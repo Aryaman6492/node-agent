@@ -2,7 +2,7 @@ package objectcache
 
 import (
 	"github.com/goradd/maps"
-	"github.com/kubescape/node-agent/pkg/utils"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
 	corev1 "k8s.io/api/core/v1"
 )
 

@@ -16,7 +16,7 @@ import (
 	eventtypes "github.com/inspektor-gadget/inspektor-gadget/pkg/types"
 	"github.com/kubescape/go-logger"
 	"github.com/kubescape/go-logger/helpers"
-	"github.com/kubescape/node-agent/pkg/ebpf/gadgets/randomx/types"
+	"github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/randomx/types"
 )
 
 //go:generate go run github.com/cilium/ebpf/cmd/bpf2go -no-global-types -target bpf -cc clang -cflags "-g -O2 -Wall" -type event randomx bpf/randomx.bpf.c -- -I./bpf/

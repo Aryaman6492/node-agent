@@ -3,8 +3,8 @@ package containerwatcher
 import (
 	"fmt"
 
-	tracerhttp "github.com/kubescape/node-agent/pkg/ebpf/gadgets/http/tracer"
-	tracerhttptype "github.com/kubescape/node-agent/pkg/ebpf/gadgets/http/types"
+	tracerhttp "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/http/tracer"
+	tracerhttptype "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/http/types"
 
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/types"
 	"github.com/kubescape/go-logger"

@@ -4,7 +4,7 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/kubescape/node-agent/mocks"
+	"github.com/Aryaman6492/node-agent/mocks"
 
 	"github.com/stretchr/testify/assert"
 	corev1 "k8s.io/api/core/v1"

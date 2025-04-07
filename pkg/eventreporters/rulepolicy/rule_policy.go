@@ -1,9 +1,9 @@
 package rulepolicy
 
 import (
-	"github.com/kubescape/node-agent/pkg/applicationprofilemanager"
-	"github.com/kubescape/node-agent/pkg/rulemanager"
-	"github.com/kubescape/node-agent/pkg/utils"
+	"github.com/Aryaman6492/node-agent/pkg/applicationprofilemanager"
+	"github.com/Aryaman6492/node-agent/pkg/rulemanager"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
 )
 
 type RulePolicyReporter struct {

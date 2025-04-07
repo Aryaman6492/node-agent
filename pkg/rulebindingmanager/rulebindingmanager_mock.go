@@ -1,6 +1,6 @@
 package rulebindingmanager
 
-import "github.com/kubescape/node-agent/pkg/ruleengine"
+import "github.com/Aryaman6492/node-agent/pkg/ruleengine"
 
 var _ RuleBindingCache = (*RuleBindingCacheMock)(nil)
 

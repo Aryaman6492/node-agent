@@ -4,11 +4,11 @@ import (
 	"context"
 
 	"github.com/goradd/maps"
-	"github.com/kubescape/node-agent/pkg/objectcache"
-	"github.com/kubescape/node-agent/pkg/objectcache/applicationprofilecache/callstackcache"
-	"github.com/kubescape/node-agent/pkg/utils"
-	"github.com/kubescape/node-agent/pkg/watcher"
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
+	"github.com/Aryaman6492/node-agent/pkg/objectcache"
+	"github.com/Aryaman6492/node-agent/pkg/objectcache/applicationprofilecache/callstackcache"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
+	"github.com/Aryaman6492/node-agent/pkg/watcher"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 )

@@ -3,7 +3,7 @@ header:
   last-updated: '2023-10-12'
   last-reviewed: '2023-10-12'
   expiration-date: '2024-10-12T01:00:00.000Z'
-  project-url: https://github.com/kubescape/node-agent/
+  project-url: https://github.com/Aryaman6492/node-agent/
   project-release: 1.0.0
 project-lifecycle:
   stage: active
@@ -24,7 +24,7 @@ contribution-policy:
 documentation:
 - https://github.com/kubescape/kubescape/tree/master/docs
 distribution-points:
-- https://github.com/kubescape/node-agent/
+- https://github.com/Aryaman6492/node-agent/
 security-artifacts:
   threat-model:
     threat-model-created: false

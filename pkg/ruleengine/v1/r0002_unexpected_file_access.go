@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/kubescape/node-agent/pkg/ebpf/events"
-	"github.com/kubescape/node-agent/pkg/ruleengine"
-	"github.com/kubescape/node-agent/pkg/utils"
-	"github.com/kubescape/storage/pkg/registry/file/dynamicpathdetector"
+	"github.com/Aryaman6492/node-agent/pkg/ebpf/events"
+	"github.com/Aryaman6492/node-agent/pkg/ruleengine"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
+	"github.com/Aryaman6492/storage/pkg/registry/file/dynamicpathdetector"
 
-	"github.com/kubescape/node-agent/pkg/objectcache"
+	"github.com/Aryaman6492/node-agent/pkg/objectcache"
 
 	apitypes "github.com/armosec/armoapi-go/armotypes"
 

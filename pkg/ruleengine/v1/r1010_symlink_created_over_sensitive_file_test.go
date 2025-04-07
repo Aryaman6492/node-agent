@@ -5,10 +5,10 @@ import (
 	"testing"
 
 	eventtypes "github.com/inspektor-gadget/inspektor-gadget/pkg/types"
-	"github.com/kubescape/node-agent/pkg/utils"
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
 
-	tracersymlinktype "github.com/kubescape/node-agent/pkg/ebpf/gadgets/symlink/types"
+	tracersymlinktype "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/symlink/types"
 )
 
 func TestR1010SymlinkCreatedOverSensitiveFile(t *testing.T) {

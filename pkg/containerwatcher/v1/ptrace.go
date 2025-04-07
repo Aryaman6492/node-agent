@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/types"
-	tracerptrace "github.com/kubescape/node-agent/pkg/ebpf/gadgets/ptrace/tracer"
-	tracerptracetype "github.com/kubescape/node-agent/pkg/ebpf/gadgets/ptrace/tracer/types"
+	tracerptrace "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/ptrace/tracer"
+	tracerptracetype "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/ptrace/tracer/types"
 )
 
 func (ch *IGContainerWatcher) ptraceEventCallback(event *tracerptracetype.Event) {

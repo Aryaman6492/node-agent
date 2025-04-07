@@ -1,8 +1,8 @@
 package exporters
 
 import (
-	"github.com/kubescape/node-agent/pkg/malwaremanager"
-	"github.com/kubescape/node-agent/pkg/ruleengine"
+	"github.com/Aryaman6492/node-agent/pkg/malwaremanager"
+	"github.com/Aryaman6492/node-agent/pkg/ruleengine"
 )
 
 // generic exporter interface

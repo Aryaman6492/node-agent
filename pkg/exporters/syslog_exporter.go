@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/kubescape/node-agent/pkg/malwaremanager"
-	"github.com/kubescape/node-agent/pkg/ruleengine"
+	"github.com/Aryaman6492/node-agent/pkg/malwaremanager"
+	"github.com/Aryaman6492/node-agent/pkg/ruleengine"
 
 	"github.com/kubescape/go-logger"
 	"github.com/kubescape/go-logger/helpers"

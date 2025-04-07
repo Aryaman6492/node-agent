@@ -8,7 +8,7 @@ import (
 
 	"github.com/armosec/utils-k8s-go/wlid"
 	"github.com/kubescape/k8s-interface/k8sinterface"
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

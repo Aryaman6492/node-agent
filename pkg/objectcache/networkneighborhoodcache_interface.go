@@ -3,8 +3,8 @@ package objectcache
 import (
 	"context"
 
-	"github.com/kubescape/node-agent/pkg/watcher"
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
+	"github.com/Aryaman6492/node-agent/pkg/watcher"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
 	"k8s.io/apimachinery/pkg/runtime"
 )
 

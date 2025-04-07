@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	mmtypes "github.com/kubescape/node-agent/pkg/malwaremanager/v1/types"
-	"github.com/kubescape/node-agent/pkg/ruleengine"
-	ruleenginev1 "github.com/kubescape/node-agent/pkg/ruleengine/v1"
+	mmtypes "github.com/Aryaman6492/node-agent/pkg/malwaremanager/v1/types"
+	"github.com/Aryaman6492/node-agent/pkg/ruleengine"
+	ruleenginev1 "github.com/Aryaman6492/node-agent/pkg/ruleengine/v1"
 
 	apitypes "github.com/armosec/armoapi-go/armotypes"
 	igtypes "github.com/inspektor-gadget/inspektor-gadget/pkg/types"

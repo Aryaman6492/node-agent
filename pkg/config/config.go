@@ -5,7 +5,7 @@ import (
 	"slices"
 	"time"
 
-	"github.com/kubescape/node-agent/pkg/exporters"
+	"github.com/Aryaman6492/node-agent/pkg/exporters"
 	"github.com/spf13/viper"
 )
 

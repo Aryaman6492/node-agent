@@ -5,10 +5,10 @@ import (
 	"testing"
 
 	eventtypes "github.com/inspektor-gadget/inspektor-gadget/pkg/types"
-	"github.com/kubescape/node-agent/pkg/utils"
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
 
-	tracerhardlinktype "github.com/kubescape/node-agent/pkg/ebpf/gadgets/hardlink/types"
+	tracerhardlinktype "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/hardlink/types"
 )
 
 func TestR1012HardlinkCreatedOverSensitiveFile(t *testing.T) {

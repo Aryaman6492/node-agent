@@ -5,7 +5,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/kubescape/node-agent/pkg/filehandler"
+	"github.com/Aryaman6492/node-agent/pkg/filehandler"
 
 	"github.com/stretchr/testify/assert"
 )

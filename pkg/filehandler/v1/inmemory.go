@@ -6,7 +6,7 @@ import (
 
 	"github.com/kubescape/go-logger"
 	"github.com/kubescape/go-logger/helpers"
-	"github.com/kubescape/node-agent/pkg/filehandler"
+	"github.com/Aryaman6492/node-agent/pkg/filehandler"
 )
 
 const initFileListLength = 500

@@ -5,8 +5,8 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/kubescape/node-agent/pkg/config"
-	"github.com/kubescape/node-agent/pkg/validator/ebpf"
+	"github.com/Aryaman6492/node-agent/pkg/config"
+	"github.com/Aryaman6492/node-agent/pkg/validator/ebpf"
 
 	"github.com/cilium/ebpf/rlimit"
 	"github.com/facette/natsort"

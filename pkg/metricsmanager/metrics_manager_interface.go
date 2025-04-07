@@ -3,7 +3,7 @@ package metricsmanager
 import (
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/gadgets/top"
 	toptypes "github.com/inspektor-gadget/inspektor-gadget/pkg/gadgets/top/ebpf/types"
-	"github.com/kubescape/node-agent/pkg/utils"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
 )
 
 // MetricsManager is an interface for reporting metrics

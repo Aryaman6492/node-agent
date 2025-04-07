@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/kubescape/node-agent/pkg/utils"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
 
-	tracerrandomxtype "github.com/kubescape/node-agent/pkg/ebpf/gadgets/randomx/types"
+	tracerrandomxtype "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/randomx/types"
 )
 
 func TestR1007XMRCryptoMining(t *testing.T) {

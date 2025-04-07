@@ -2,8 +2,8 @@ package dnscache
 
 import (
 	"github.com/kubescape/go-logger"
-	"github.com/kubescape/node-agent/pkg/dnsmanager"
-	"github.com/kubescape/node-agent/pkg/objectcache"
+	"github.com/Aryaman6492/node-agent/pkg/dnsmanager"
+	"github.com/Aryaman6492/node-agent/pkg/objectcache"
 )
 
 var _ objectcache.DnsCache = (*DnsCacheImpl)(nil)

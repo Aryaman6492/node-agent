@@ -3,11 +3,11 @@ package ruleengine
 import (
 	"fmt"
 
-	traceriouringtype "github.com/kubescape/node-agent/pkg/ebpf/gadgets/iouring/tracer/types"
-	"github.com/kubescape/node-agent/pkg/objectcache"
-	"github.com/kubescape/node-agent/pkg/ruleengine"
-	"github.com/kubescape/node-agent/pkg/ruleengine/v1/helpers/iouring"
-	"github.com/kubescape/node-agent/pkg/utils"
+	traceriouringtype "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/iouring/tracer/types"
+	"github.com/Aryaman6492/node-agent/pkg/objectcache"
+	"github.com/Aryaman6492/node-agent/pkg/ruleengine"
+	"github.com/Aryaman6492/node-agent/pkg/ruleengine/v1/helpers/iouring"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
 
 	apitypes "github.com/armosec/armoapi-go/armotypes"
 )

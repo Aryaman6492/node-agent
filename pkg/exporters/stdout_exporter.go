@@ -4,8 +4,8 @@ import (
 	"os"
 
 	apitypes "github.com/armosec/armoapi-go/armotypes"
-	"github.com/kubescape/node-agent/pkg/malwaremanager"
-	"github.com/kubescape/node-agent/pkg/ruleengine"
+	"github.com/Aryaman6492/node-agent/pkg/malwaremanager"
+	"github.com/Aryaman6492/node-agent/pkg/ruleengine"
 
 	log "github.com/sirupsen/logrus"
 )

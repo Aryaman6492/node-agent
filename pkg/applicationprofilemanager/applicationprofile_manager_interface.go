@@ -2,12 +2,12 @@ package applicationprofilemanager
 
 import (
 	containercollection "github.com/inspektor-gadget/inspektor-gadget/pkg/container-collection"
-	"github.com/kubescape/node-agent/pkg/ebpf/events"
-	tracerhardlinktype "github.com/kubescape/node-agent/pkg/ebpf/gadgets/hardlink/types"
-	tracerhttptype "github.com/kubescape/node-agent/pkg/ebpf/gadgets/http/types"
-	tracersymlinktype "github.com/kubescape/node-agent/pkg/ebpf/gadgets/symlink/types"
-	"github.com/kubescape/node-agent/pkg/utils"
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/v1beta1"
+	"github.com/Aryaman6492/node-agent/pkg/ebpf/events"
+	tracerhardlinktype "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/hardlink/types"
+	tracerhttptype "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/http/types"
+	tracersymlinktype "github.com/Aryaman6492/node-agent/pkg/ebpf/gadgets/symlink/types"
+	"github.com/Aryaman6492/node-agent/pkg/utils"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
 )
 
 type ApplicationProfileManagerClient interface {

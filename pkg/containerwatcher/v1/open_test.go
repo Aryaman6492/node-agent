@@ -5,8 +5,8 @@ import (
 
 	traceropentype "github.com/inspektor-gadget/inspektor-gadget/pkg/gadgets/trace/open/types"
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/types"
-	"github.com/kubescape/node-agent/pkg/config"
-	"github.com/kubescape/node-agent/pkg/metricsmanager"
+	"github.com/Aryaman6492/node-agent/pkg/config"
+	"github.com/Aryaman6492/node-agent/pkg/metricsmanager"
 	"github.com/stretchr/testify/assert"
 )
 

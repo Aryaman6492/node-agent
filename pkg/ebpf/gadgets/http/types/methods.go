@@ -6,7 +6,7 @@ import (
 
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/columns"
 	eventtypes "github.com/inspektor-gadget/inspektor-gadget/pkg/types"
-	"github.com/kubescape/storage/pkg/apis/softwarecomposition/consts"
+	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/consts"
 )
 
 func GetPacketDirection(syscall string) (consts.NetworkDirection, error) {
