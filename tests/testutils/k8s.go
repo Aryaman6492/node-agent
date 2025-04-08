@@ -362,7 +362,7 @@ func CreateWorkloadsInPath(namespace, dir string) ([]TestWorkload, error) {
 func IncreaseNodeAgentSniffingTime(newDuration string) {
 	k8sClient := k8sinterface.NewKubernetesApi()
 	ctx := context.TODO()
-	namespace := "kubescape"
+	namespace := "seclogic"
 
 	cm, err := k8sClient.KubernetesClient.CoreV1().ConfigMaps(namespace).Get(context.TODO(), "node-agent", metav1.GetOptions{})
 	if err != nil {
@@ -516,7 +516,7 @@ func getContainerFromNetworkNeighborhood(nn *v1beta1.NetworkNeighborhood, contai
 func PrintNodeAgentLogs(t *testing.T) {
 	k8sClient := k8sinterface.NewKubernetesApi()
 	labelSelector := metav1.LabelSelector{MatchLabels: map[string]string{"app": "node-agent"}}
-	pods, err := k8sClient.KubernetesClient.CoreV1().Pods("kubescape").List(context.TODO(), metav1.ListOptions{
+	pods, err := k8sClient.KubernetesClient.CoreV1().Pods("seclogic").List(context.TODO(), metav1.ListOptions{
 		LabelSelector: labels.Set(labelSelector.MatchLabels).String(),
 	})
 	if err != nil {

@@ -3,8 +3,8 @@
     "kind": "CronJob",
     "metadata": {
         "annotations": {
-            "meta.helm.sh/release-name": "kubescape",
-            "meta.helm.sh/release-namespace": "kubescape"
+            "meta.helm.sh/release-name": "seclogic",
+            "meta.helm.sh/release-namespace": "seclogic"
         },
         "creationTimestamp": "2023-12-03T16:02:57Z",
         "generation": 1,
@@ -16,7 +16,7 @@
             "tier": "ks-control-plane"
         },
         "name": "kubescape-scheduler",
-        "namespace": "kubescape",
+        "namespace": "seclogic",
         "resourceVersion": "71390981",
         "uid": "4560b643-2667-4f20-9cb8-5d27fc4f42ae"
     },

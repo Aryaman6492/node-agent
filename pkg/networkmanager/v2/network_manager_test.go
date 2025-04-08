@@ -122,7 +122,7 @@ func TestCreateNetworkManager(t *testing.T) {
 		Proto:     "TCP",
 		PodLabels: map[string]string{"app": "nginx"},
 		DstEndpoint: types.L3Endpoint{
-			Namespace: "kubescape",
+			Namespace: "seclogic",
 			Name:      "nginx-deployment-cbdccf466-csh9c",
 			Kind:      "pod",
 			Addr:      "1.2.3.4",
@@ -143,7 +143,7 @@ func TestCreateNetworkManager(t *testing.T) {
 		Proto:     "TCP",
 		PodLabels: map[string]string{"app": "nginx"},
 		DstEndpoint: types.L3Endpoint{
-			Namespace: "kubescape",
+			Namespace: "seclogic",
 			Name:      "nginx-deployment-cbdccf466-csh9c",
 			Kind:      "pod",
 			Addr:      "1.2.3.4",
@@ -167,7 +167,7 @@ func TestCreateNetworkManager(t *testing.T) {
 		Type:              "internal",
 		Ports:             []v1beta1.NetworkPort{{Name: "TCP-80", Protocol: "TCP", Port: ptr.To(int32(80))}},
 		PodSelector:       &metav1.LabelSelector{MatchLabels: map[string]string{"app": "destination"}},
-		NamespaceSelector: &metav1.LabelSelector{MatchLabels: map[string]string{"kubernetes.io/metadata.name": "kubescape"}},
+		NamespaceSelector: &metav1.LabelSelector{MatchLabels: map[string]string{"kubernetes.io/metadata.name": "seclogic"}},
 	}, storageClient.NetworkNeighborhoods[0].Spec.Containers[1].Ingress[0])
 	assert.Equal(t, 0, len(storageClient.NetworkNeighborhoods[0].Spec.Containers[1].Egress))
 	// check the second neighborhood - this is a patch for execs and opens
@@ -176,14 +176,14 @@ func TestCreateNetworkManager(t *testing.T) {
 		Type:              "internal",
 		Ports:             []v1beta1.NetworkPort{{Name: "TCP-80", Protocol: "TCP", Port: ptr.To(int32(80))}},
 		PodSelector:       &metav1.LabelSelector{MatchLabels: map[string]string{"app": "destination"}},
-		NamespaceSelector: &metav1.LabelSelector{MatchLabels: map[string]string{"kubernetes.io/metadata.name": "kubescape"}},
+		NamespaceSelector: &metav1.LabelSelector{MatchLabels: map[string]string{"kubernetes.io/metadata.name": "seclogic"}},
 	}, storageClient.NetworkNeighborhoods[1].Spec.Containers[1].Ingress[0])
 	assert.Equal(t, v1beta1.NetworkNeighbor{
 		Identifier:        "c86024d63c2bfddde96a258c3005e963e06fb9d8ee941a6de3003d6eae5dd7cc",
 		Type:              "internal",
 		Ports:             []v1beta1.NetworkPort{{Name: "TCP-443", Protocol: "TCP", Port: ptr.To(int32(443))}},
 		PodSelector:       &metav1.LabelSelector{MatchLabels: map[string]string{"app": "destination"}},
-		NamespaceSelector: &metav1.LabelSelector{MatchLabels: map[string]string{"kubernetes.io/metadata.name": "kubescape"}},
+		NamespaceSelector: &metav1.LabelSelector{MatchLabels: map[string]string{"kubernetes.io/metadata.name": "seclogic"}},
 	}, storageClient.NetworkNeighborhoods[1].Spec.Containers[1].Egress[0])
 }
 
@@ -293,14 +293,14 @@ func TestNetworkManager_createNetworkNeighbor(t *testing.T) {
 		},
 		{
 			name:      "pod from same namespace egress - should not have namespace selector",
-			namespace: "kubescape",
+			namespace: "seclogic",
 			networkEvent: networkmanager.NetworkEvent{
 				Port:      80,
 				PktType:   "OUTGOING",
 				Protocol:  "TCP",
 				PodLabels: "app=nginx",
 				Destination: networkmanager.Destination{
-					Namespace: "kubescape",
+					Namespace: "seclogic",
 					Name:      "nginx-deployment-cbdccf466-csh9c",
 					Kind:      networkmanager.EndpointKindPod,
 					PodLabels: "app=destination,controller-revision-hash=hash",
@@ -326,7 +326,7 @@ func TestNetworkManager_createNetworkNeighbor(t *testing.T) {
 				Protocol:  "TCP",
 				PodLabels: "app=nginx",
 				Destination: networkmanager.Destination{
-					Namespace: "kubescape",
+					Namespace: "seclogic",
 					Name:      "nginx-deployment-cbdccf466-csh9c",
 					Kind:      networkmanager.EndpointKindPod,
 					PodLabels: "app=destination,pod-template-hash=test",
@@ -338,7 +338,7 @@ func TestNetworkManager_createNetworkNeighbor(t *testing.T) {
 				DNS:               "",
 				Ports:             []v1beta1.NetworkPort{{Name: "TCP-80", Protocol: "TCP", Port: ptr.To(int32(80))}},
 				PodSelector:       &metav1.LabelSelector{MatchLabels: map[string]string{"app": "destination"}},
-				NamespaceSelector: &metav1.LabelSelector{MatchLabels: map[string]string{"kubernetes.io/metadata.name": "kubescape"}},
+				NamespaceSelector: &metav1.LabelSelector{MatchLabels: map[string]string{"kubernetes.io/metadata.name": "seclogic"}},
 				IPAddress:         "",
 				Identifier:        "c86024d63c2bfddde96a258c3005e963e06fb9d8ee941a6de3003d6eae5dd7cc",
 			},
@@ -379,7 +379,7 @@ func TestNetworkManager_createNetworkNeighbor(t *testing.T) {
 		},
 		{
 			name:      "IP is resolved - DNS is enriched",
-			namespace: "kubescape",
+			namespace: "seclogic",
 			networkEvent: networkmanager.NetworkEvent{
 				Port:     1,
 				PktType:  "HOST",

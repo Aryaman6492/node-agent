@@ -22,7 +22,7 @@ persistence:
   accessMode: ReadWriteOnce
   size:
     backingStorage: 5Gi
-    kubevuln: 2Gi
+    shieldvuln: 2Gi
 
 global:
   namespaceTier: ks-control-plane

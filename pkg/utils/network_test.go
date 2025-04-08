@@ -126,8 +126,8 @@ func TestGetNamespaceMatchLabels(t *testing.T) {
 		{
 			name:                 "different namespace - should have the destination namespace as selector",
 			sourceNamespace:      "default",
-			destinationNamespace: "kubescape",
-			expected:             map[string]string{"kubernetes.io/metadata.name": "kubescape"},
+			destinationNamespace: "seclogic",
+			expected:             map[string]string{"kubernetes.io/metadata.name": "seclogic"},
 		},
 	}
 

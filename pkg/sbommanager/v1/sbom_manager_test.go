@@ -14,28 +14,28 @@ func TestNormalizeimageDigest(t *testing.T) {
 		want        string
 	}{
 		{
-			name:        "replicaset-kubevuln-666dbffc4f-kubevuln-ca1b-6f47",
-			imageDigest: "quay.io/kubescape/kubevuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
-			imageName:   "quay.io/kubescape/kubevuln:v0.3.2",
-			want:        "quay.io/kubescape/kubevuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
+			name:        "replicaset-shieldvuln-666dbffc4f-shieldvuln-ca1b-6f47",
+			imageDigest: "quay.io/kubescape/shieldvuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
+			imageName:   "quay.io/kubescape/shieldvuln:v0.3.2",
+			want:        "quay.io/kubescape/shieldvuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
 		},
 		{
 			name:        "trap",
 			imageDigest: "sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
-			imageName:   "quay.io/kubescape/kubevuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
-			want:        "quay.io/kubescape/kubevuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
+			imageName:   "quay.io/kubescape/shieldvuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
+			want:        "quay.io/kubescape/shieldvuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
 		},
 		{
 			name:        "trap 2",
 			imageDigest: "@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
-			imageName:   "quay.io/kubescape/kubevuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
-			want:        "quay.io/kubescape/kubevuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
+			imageName:   "quay.io/kubescape/shieldvuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
+			want:        "quay.io/kubescape/shieldvuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
 		},
 		{
 			name:        "trap 3",
 			imageDigest: "titi@toto@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
-			imageName:   "quay.io/kubescape/kubevuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
-			want:        "quay.io/kubescape/kubevuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
+			imageName:   "quay.io/kubescape/shieldvuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
+			want:        "quay.io/kubescape/shieldvuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
 		},
 		{
 			name:        "quay.io-kubescape-kubescape-v3.0.3-88a469",

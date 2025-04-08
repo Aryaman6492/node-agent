@@ -45,7 +45,7 @@ func TestStorage_PatchNetworkNeighbors(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			sc, _ := CreateFakeStorage("kubescape")
+			sc, _ := CreateFakeStorage("seclogic")
 			existingProfile := &v1beta1.NetworkNeighbors{
 				ObjectMeta: v1.ObjectMeta{
 					Name: tt.args.name,
@@ -187,7 +187,7 @@ func TestStorage_PatchApplicationProfile(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			sc, _ := CreateFakeStorage("kubescape")
+			sc, _ := CreateFakeStorage("seclogic")
 			existingProfile := &v1beta1.ApplicationProfile{
 				ObjectMeta: v1.ObjectMeta{
 					Name: tt.args.name,

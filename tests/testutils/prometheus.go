@@ -28,7 +28,7 @@ const (
 func getNodeAgentPods() []string {
 	k8sClient := k8sinterface.NewKubernetesApi()
 	var podNames []string
-	pods, err := k8sClient.KubernetesClient.CoreV1().Pods("kubescape").List(context.TODO(), metav1.ListOptions{
+	pods, err := k8sClient.KubernetesClient.CoreV1().Pods("seclogic").List(context.TODO(), metav1.ListOptions{
 		LabelSelector: "app.kubernetes.io/name=node-agent",
 	})
 	if err != nil {
@@ -70,7 +70,7 @@ func sum(numbers []float64) float64 {
 func PlotNodeAgentPrometheusCPUUsage(testcase string, startTime, endTime time.Time) error {
 	nodeAgentPods := getNodeAgentPods()
 	for _, podName := range nodeAgentPods {
-		query := fmt.Sprintf(`sum(node_namespace_pod_container:container_cpu_usage_seconds_total:sum_irate{namespace="kubescape", pod="%s", container="node-agent"}) by (container)`, podName)
+		query := fmt.Sprintf(`sum(node_namespace_pod_container:container_cpu_usage_seconds_total:sum_irate{namespace="seclogic", pod="%s", container="node-agent"}) by (container)`, podName)
 		timestamps, values, err := sendPromQLQueryToProm(query, startTime, endTime, "")
 		if err != nil {
 			return err
