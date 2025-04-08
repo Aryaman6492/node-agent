@@ -65,7 +65,7 @@ spec:
         - name: "data"
           {{- if eq .Values.configurations.persistence "enable" }}
           persistentVolumeClaim:
-            claimName: kubescape-{{ .Values.storage.name }}
+            claimName: seclogic-{{ .Values.storage.name }}
           {{- else }}
           emptyDir: {}
           {{- end }}

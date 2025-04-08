@@ -1,5 +1,5 @@
 clusterName: "cluster"
-ksNamespace: kubescape
+ksNamespace: seclogic
 logger:
   level: debug
   name: zap
@@ -39,7 +39,7 @@ storage:
   labels:
     app.kubernetes.io/name: "storage"
     app.kubernetes.io/component: "apiserver"
-    app.kubernetes.io/part-of: "kubescape-storage"
+    app.kubernetes.io/part-of: "seclogic-storage"
   resources:
     requests:
       cpu: 100m

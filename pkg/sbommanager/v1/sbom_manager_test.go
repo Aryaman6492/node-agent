@@ -38,7 +38,7 @@ func TestNormalizeimageDigest(t *testing.T) {
 			want:        "quay.io/kubescape/shieldvuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
 		},
 		{
-			name:        "quay.io-kubescape-kubescape-v3.0.3-88a469",
+			name:        "quay.io-seclogic-seclogic-v3.0.3-88a469",
 			imageDigest: "86413975e2d0330176894e4f3f5987505ed27b1191f2537797fbbf345b88a469",
 			imageName:   "quay.io/kubescape/kubescape:v3.0.3",
 			want:        "quay.io/kubescape/kubescape@sha256:86413975e2d0330176894e4f3f5987505ed27b1191f2537797fbbf345b88a469",

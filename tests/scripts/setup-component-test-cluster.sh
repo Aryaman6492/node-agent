@@ -5,7 +5,7 @@
 # Function to print message and exit.
 function error_exit {
   kubectl delete namespace monitoring 2> /dev/null
-  kubectl delete namespace kubescape 2> /dev/null
+  kubectl delete namespace seclogic 2> /dev/null
   echo "$1" 1>&2
   exit 1
 }
@@ -58,13 +58,13 @@ STORAGE_TAG=$(./storage-tag.sh)
 NODE_AGENT_TAG=$(./node-agent-tag.sh)
 
 # Install node agent chart
-helm upgrade --install kubescape ../chart --set clusterName=`kubectl config current-context` \
+helm upgrade --install seclogic ../chart --set clusterName=`kubectl config current-context` \
     --set nodeAgent.image.tag=$NODE_AGENT_TAG \
     --set storage.image.tag=$STORAGE_TAG \
-    -n kubescape --create-namespace --wait --timeout 5m || error_exit "Failed to install node-agent chart."
+    -n seclogic --create-namespace --wait --timeout 5m || error_exit "Failed to install node-agent chart."
 
 # Check that the node-agent pod is running
-kubectl wait --for=condition=Ready pod -l app.kubernetes.io/name=node-agent -n kubescape --timeout=300s || error_exit "Node Agent did not start."
+kubectl wait --for=condition=Ready pod -l app.kubernetes.io/name=node-agent -n seclogic --timeout=300s || error_exit "Node Agent did not start."
 
 echo "System test cluster setup complete."
 

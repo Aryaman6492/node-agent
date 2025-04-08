@@ -26,7 +26,7 @@ import (
 )
 
 const (
-	kubescapeCustomResourceGroup = "spdx.softwarecomposition.seclogic.io"
+	seclogicCustomResourceGroup = "spdx.softwarecomposition.seclogic.io"
 )
 
 // resourceVersionGetter is an interface used to get resource version from events.
@@ -90,7 +90,7 @@ func (wh *WatchHandler) watch(ctx context.Context, resource watcher.WatchResourc
 	res := resource.GroupVersionResource()
 	opt := resource.ListOptions()
 
-	if res.Group == kubescapeCustomResourceGroup {
+	if res.Group == seclogicCustomResourceGroup {
 		if err := backoff.RetryNotify(func() error {
 			var err error
 			opt.ResourceVersion, err = wh.getExistingStorageObjects(ctx, res, opt)
@@ -151,7 +151,7 @@ func (wh *WatchHandler) chooseWatcher(res schema.GroupVersionResource, opts meta
 		return wh.k8sClient.GetDynamicClient().Resource(res).Namespace("").Watch(context.Background(), opts)
 	default:
 		// Make sure the resource version is not our storage, if so we panic.
-		if res.Group == kubescapeCustomResourceGroup {
+		if res.Group == seclogicCustomResourceGroup {
 			return nil, fmt.Errorf("resource must use the storage client %s: %w", res.Resource, errNotImplemented)
 		}
 
@@ -232,7 +232,7 @@ func (wh *WatchHandler) chooseLister(res schema.GroupVersionResource, opts metav
 		return wh.k8sClient.GetDynamicClient().Resource(res).Namespace("").List(context.Background(), opts)
 	default:
 		// Make sure the resource version is not our storage, if so we panic.
-		if res.Group == kubescapeCustomResourceGroup {
+		if res.Group == seclogicCustomResourceGroup {
 			return nil, fmt.Errorf("resource must use the storage client %s: %w", res.Resource, errNotImplemented)
 		}
 

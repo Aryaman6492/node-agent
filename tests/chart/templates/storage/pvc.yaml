@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: kubescape-{{ .Values.storage.name }}
+  name: seclogic-{{ .Values.storage.name }}
   namespace: {{ .Values.ksNamespace }}
   labels:
     seclogic.io/ignore: "true"

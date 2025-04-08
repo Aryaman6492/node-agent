@@ -28,7 +28,7 @@ After you have a Kubernetes cluster up and running, you can install Node Agent b
 ```bash
 git clone https://github.com/Aryaman6492/node-agent.git && cd node-agent
 # Assuming AlertManager is running in service  "alertmanager-operated" in namespace "monitoring"
-helm repo add kubescape https://kubescape.github.io/helm-charts/ ; helm repo update ; helm upgrade --install kubescape kubescape/kubescape-operator -n kubescape --create-namespace --set clusterName=`kubectl config current-context` --set nodeAgent.config.alertManagerExporterUrls=alertmanager-operated.monitoring.svc.cluster.local:9093 --set nodeAgent.config.maxLearningPeriod=15m --set nodeAgent.config.learningPeriod=2m --set nodeAgent.config.updatePeriod=1m --set capabilities.runtimeDetection=enable --set alertCRD.installDefault=true --set alertCRD.scopeClustered=true
+helm repo add seclogic https://kubescape.github.io/helm-charts/ ; helm repo update ; helm upgrade --install seclogic kubescape/kubescape-operator -n seclogic --create-namespace --set clusterName=`kubectl config current-context` --set nodeAgent.config.alertManagerExporterUrls=alertmanager-operated.monitoring.svc.cluster.local:9093 --set nodeAgent.config.maxLearningPeriod=15m --set nodeAgent.config.learningPeriod=2m --set nodeAgent.config.updatePeriod=1m --set capabilities.runtimeDetection=enable --set alertCRD.installDefault=true --set alertCRD.scopeClustered=true
 ```
 
 You should be getting alerts after the learning period ends. The learning period is the time Node Agent takes to learn the normal behavior of the cluster, during this period Node Agent will raise alerts only for malicious activities. After the learning period, Node Agent will raise alerts for both malicious and abnormal activities.
@@ -48,7 +48,7 @@ helm install alertmanager prometheus-community/kube-prometheus-stack -n monitori
 
 By default, the Node Agent is exporting alerts to stdout, you can see the alerts by running the following command:
 ```bash
-kubectl logs -n kubescape -l app=node-agent -f
+kubectl logs -n seclogic -l app=node-agent -f
 ```
 
 In the above helm chart installation, we have connected Node Agent to AlertManager, you can see the alerts in AlertManager UI by going to `http://<node-ip>:9093`.

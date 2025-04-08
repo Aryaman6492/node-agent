@@ -41,16 +41,16 @@ func TestLoadConfig(t *testing.T) {
 				EnableRuntimeDetection:   true,
 				EnableSeccomp:            true,
 				Exporters: exporters.ExportersConfig{
-					SyslogExporter: "http://syslog.kubescape.svc.cluster.local:514",
+					SyslogExporter: "http://syslog.seclogic.svc.cluster.local:514",
 					StdoutExporter: &b,
 					AlertManagerExporterUrls: []string{
-						"http://alertmanager.kubescape.svc.cluster.local:9093",
-						"http://alertmanager.kubescape.svc.cluster.local:9095",
+						"http://alertmanager.seclogic.svc.cluster.local:9093",
+						"http://alertmanager.seclogic.svc.cluster.local:9095",
 					},
 					CsvRuleExporterPath:    "/rules",
 					CsvMalwareExporterPath: "/malware",
 					HTTPExporterConfig: &exporters.HTTPExporterConfig{
-						URL: "http://synchronizer.kubescape.svc.cluster.local:8089/apis/v1/seclogic.io",
+						URL: "http://synchronizer.seclogic.svc.cluster.local:8089/apis/v1/seclogic.io",
 					},
 				},
 			},
