@@ -16,7 +16,7 @@ import (
 	"github.com/grafana/pyroscope-go"
 	igconfig "github.com/inspektor-gadget/inspektor-gadget/pkg/config"
 	containercollection "github.com/inspektor-gadget/inspektor-gadget/pkg/container-collection"
-	beUtils "github.com/kubescape/backend/pkg/utils"
+	beUtils "github.com/Aryaman6492/backend/pkg/utils"
 	"github.com/kubescape/go-logger"
 	"github.com/kubescape/go-logger/helpers"
 	"github.com/kubescape/k8s-interface/k8sinterface"

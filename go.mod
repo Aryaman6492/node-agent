@@ -31,7 +31,7 @@ require (
 	github.com/hashicorp/golang-lru/v2 v2.0.7
 	github.com/iceber/iouring-go v0.0.0-20230403020409-002cfd2e2a90
 	github.com/inspektor-gadget/inspektor-gadget v0.38.0
-	github.com/kubescape/backend v0.0.25
+	github.com/Aryaman6492/backend v0.0.25
 	github.com/kubescape/go-logger v0.0.23
 	github.com/kubescape/k8s-interface v0.0.189
 	github.com/moby/sys/mountinfo v0.7.2
@@ -65,6 +65,7 @@ require (
 )
 
 replace github.com/Aryaman6492/storage => /home/ripeey/Desktop/cqs-sensor/copycon/storage
+replace github.com/Aryaman6492/backend => /home/ripeey/Desktop/cqs-sensor/copycon/backend
 
 require (
 	dario.cat/mergo v1.0.1 // indirect
