@@ -6,7 +6,7 @@ import (
 
 	helpersv1 "github.com/kubescape/k8s-interface/instanceidhandler/v1/helpers"
 
-	"github.com/armosec/utils-k8s-go/wlid"
+	"github.com/Aryaman6492/utils-k8s-go/wlid"
 	"github.com/kubescape/k8s-interface/k8sinterface"
 	"github.com/Aryaman6492/storage/pkg/apis/softwarecomposition/v1beta1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

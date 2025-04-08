@@ -15,7 +15,7 @@ import (
 	"github.com/Aryaman6492/node-agent/pkg/utils"
 
 	"github.com/armosec/armoapi-go/armotypes"
-	"github.com/armosec/utils-k8s-go/armometadata"
+	"github.com/Aryaman6492/utils-k8s-go/armometadata"
 	"github.com/kubescape/go-logger"
 	"github.com/kubescape/go-logger/helpers"
 	"golang.org/x/net/context"

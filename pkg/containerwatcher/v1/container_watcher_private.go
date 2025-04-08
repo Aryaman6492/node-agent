@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/armosec/utils-k8s-go/wlid"
+	"github.com/Aryaman6492/utils-k8s-go/wlid"
 	"github.com/cenkalti/backoff"
 	containercollection "github.com/inspektor-gadget/inspektor-gadget/pkg/container-collection"
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/socketenricher"

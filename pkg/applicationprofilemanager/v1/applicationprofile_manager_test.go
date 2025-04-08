@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/armosec/utils-k8s-go/wlid"
+	"github.com/Aryaman6492/utils-k8s-go/wlid"
 	mapset "github.com/deckarep/golang-set/v2"
 	"github.com/goradd/maps"
 

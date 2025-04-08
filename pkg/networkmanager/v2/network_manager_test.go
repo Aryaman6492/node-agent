@@ -7,7 +7,7 @@ import (
 
 	"time"
 
-	"github.com/armosec/utils-k8s-go/wlid"
+	"github.com/Aryaman6492/utils-k8s-go/wlid"
 	"github.com/kubescape/k8s-interface/instanceidhandler/v1"
 	"github.com/kubescape/k8s-interface/workloadinterface"
 	"github.com/Aryaman6492/node-agent/pkg/config"

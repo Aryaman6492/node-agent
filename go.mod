@@ -8,7 +8,7 @@ require (
 	github.com/anchore/syft v1.18.1
 	github.com/aquilax/truncate v1.0.0
 	github.com/armosec/armoapi-go v0.0.548
-	github.com/armosec/utils-k8s-go v0.0.30
+	github.com/Aryaman6492/utils-k8s-go v0.0.30
 	github.com/cenkalti/backoff v2.2.1+incompatible
 	github.com/cenkalti/backoff/v4 v4.3.0
 	github.com/cenkalti/backoff/v5 v5.0.2
@@ -66,6 +66,7 @@ require (
 
 replace github.com/Aryaman6492/storage => /home/ripeey/Desktop/cqs-sensor/copycon/storage
 replace github.com/Aryaman6492/backend => /home/ripeey/Desktop/cqs-sensor/copycon/backend
+replace github.com/Aryaman6492/utils-k8s-go => /home/ripeey/Desktop/cqs-sensor/copycon/utils-k8s-go
 
 require (
 	dario.cat/mergo v1.0.1 // indirect

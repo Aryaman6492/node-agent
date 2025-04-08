@@ -11,7 +11,7 @@ import (
 	"syscall"
 
 	apitypes "github.com/armosec/armoapi-go/armotypes"
-	utilsmetadata "github.com/armosec/utils-k8s-go/armometadata"
+	utilsmetadata "github.com/Aryaman6492/utils-k8s-go/armometadata"
 	"github.com/cilium/ebpf/rlimit"
 	"github.com/grafana/pyroscope-go"
 	igconfig "github.com/inspektor-gadget/inspektor-gadget/pkg/config"

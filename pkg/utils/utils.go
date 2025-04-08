@@ -20,7 +20,7 @@ import (
 	"time"
 
 	apitypes "github.com/armosec/armoapi-go/armotypes"
-	"github.com/armosec/utils-k8s-go/wlid"
+	"github.com/Aryaman6492/utils-k8s-go/wlid"
 	mapset "github.com/deckarep/golang-set/v2"
 	"github.com/google/go-containerregistry/pkg/name"
 	"github.com/goradd/maps"
